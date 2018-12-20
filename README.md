@@ -4,11 +4,11 @@ KowalPlayer 1.0 to prosty plajer mp3 do umieszczenia na stronie. Player będzie
 w przyszłości rozwijany, ale już na ten moment jest funkcjonalny.
 
 ### Inicjalizacja
-Wklejasz do projektu pliki.
+Wklejasz do projektu wszystkie pliki.
 
 Do projektu wklejasz kod html:
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+```<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <div class="audio-player-container">
   <div class="player">
@@ -28,12 +28,17 @@ Do projektu wklejasz kod html:
   </div>
 </div>
 <script src="./script/scriptKowalPlayer.js"></script>
+```
+####W pliku js tworzysz tablice tytułów piosenek:
 
-W pliku js tworzysz tablice tytułów piosenek:
+przykład:
 
-przykład: var songs = [tytuł1.mp3 tytuł2.mp3, ...];
+```
+var songs = [tytuł1.mp3 tytuł2.mp3, ...];
+```
 
 I podspodem inicjalizujesz Player
 
+```
 var audio = new KowalPlayer(songsArray, "sciezkaDoPlików", ".klasaKonteneraPlayera(standardowo: audio-player-container)");
-# kowalPlayer
+```
